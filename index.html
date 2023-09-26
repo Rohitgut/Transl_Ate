@@ -13,7 +13,7 @@
     <style>
         body{
             height: 96vh;
-            background-image: linear-gradient(to bottom right,rgb(43, 43, 43), rgb(174, 174, 174),rgb(255, 255, 255));
+            background-image: linear-gradient(to bottom right,rgb(43, 43, 43), rgb(84, 82, 82),rgb(255, 255, 255));
 
 
         }
@@ -27,6 +27,8 @@
         h1{
             margin-bottom: 3%;
             font-weight: 900;
+            color: white;
+            text-shadow: 0px 0px 4px white;
         }
         textarea{
             margin: 15px;
@@ -41,6 +43,14 @@
             border: 2px solid black;
 
         }
+        .bd{
+            font-weight: 900;
+            transition: transform 1.2s;
+            
+        }
+        .bd:hover{
+            transform: scale(1.1);
+        }
     </style>
 
 
@@ -49,7 +59,7 @@
     <div class="content">
     <h1>Translator</h1>
 
-    <textarea id="text" rows="5" cols="80" placeholder="Write what you want to translate..."></textarea>
+    <textarea id="text" rows="5" cols="35" placeholder="Write what you want to translate..."></textarea>
 
     <h2>To</h2>
     
@@ -171,11 +181,11 @@
     </select>
 
     <br>
-    <button class="btn btn-secondary" onclick="transLate()">TRANSLATE</button>
+    <button class="btn btn-secondary bd" onclick="transLate()">TRANSLATE</button>
 
     <br>
 
-    <textarea id="output" rows="5" cols="80" readonly></textarea>
+    <textarea id="output" rows="5" cols="35" readonly></textarea>
     </div>
 
 <script>
